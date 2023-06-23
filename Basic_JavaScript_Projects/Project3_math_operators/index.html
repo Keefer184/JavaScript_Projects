@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math Operations</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h4>Math Operations</h4>
+        </header>
+        <!--Setup and input-->
+        <div>
+            <h1>Lets do Math!</h1>
+            <p>Provide two numbers and see what their calculation will be!</p>
+            <button onclick="rando()">
+                Click here for ideas of numbers to use!
+            </button>
+            <br>
+            <br>
+            <input id="Num1" type="number" value="First Number">
+            <input id="Num2" type="number" value="Second Number">
+            <br>
+            <p>Note: Try changing the numbers, then rehover over the desired operations to see them change!</p>
+            <br>
+        </div>
+        <!--End Setup and input-->
+
+        <!--Unary Operations-->
+        <div>
+            <br>
+            <p id="math_7" onmouseover="negation()">Hover over to see the opposite of each value (the negation)</p>
+            <br>
+            <p id="math_8" onmouseover="incUp()">Hover over to see the values <i>increased</i> by 1</p>
+            <br>
+            <p id="math_9" onmouseover="incDown()">Hover over to see the values <i>decreased</i> by 1</p>
+            <br>
+            <p id="sqrt" onmouseover="sqrt()">Hover over to see the square root of each value</p>
+            <br>    
+            <p id="sqrd" onmouseover="squared()">Hover over to see the square of each value</p>
+        </div>
+        <!--End Unary Operatons-->
+
+        <!--Binary Operations-->
+        <div>
+            <p id="math_1" onmouseover="addition()">Hover over to see <strong>ADDITION!</strong></p>
+            <br>
+            <p id="math_2" onmouseover="subtraction()">Hover over to see <strong>SUBTRACTION!</strong></p>
+            <br>
+            <p id="math_3" onmouseover="multiplication()">Hover over to see <strong>MULTIPLICATION!</strong></p>
+            <br>
+            <p id="math_4" onmouseover="division()">Hover over to see <strong>DIVISION!</strong></p>
+            <br>
+            <p id="math_6"></p>
+            <h2>Now let's see what happens when we take ALL of our output numbers and combine them like so: [(Num1+Num2)-(Num3*Num4)]/4</h2>
+            <button onclick="orderOfOperations()">
+                Click to see result!
+            </button>
+            <br>
+            <p id="math_5"></p>
+        </div>        
+        <!--End Binary Operations-->
+    </body>
+</html>
