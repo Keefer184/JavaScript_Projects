@@ -9,3 +9,8 @@ function myFunction(){
     sent +=" a lot from this course";
     document.getElementById("concatenate").innerHTML=sent;
 }
+function getName(){
+    var Name=document.getElementById("Fname").value;
+    console.log(Name);
+    document.getElementById("output").innerHTML="Hello "+Name+" how are you today?";
+}
