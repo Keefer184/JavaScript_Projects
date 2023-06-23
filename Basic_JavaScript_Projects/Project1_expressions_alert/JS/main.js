@@ -1,14 +1,9 @@
-var Y="What up Bitch?"
-window.alert(Y);
-document.write("How it do?");
-var A="This is a string";
-document.write(A);
-var B="Who\'s a hoe? You\'s a hoe.... hoe";
-document.write(B);
-document.write(A+B+"Man bof ya\'ll better shut da fuq up")
-var C="Concatenate"+"String";
-document.write(C);
-alert("I said "+C+" bitch...");
-var x="Mom", d="Dad", m="Mike",j="Jenny";
-document.write(d);
-document.write(3+3);
+var A="Welcome to my page with JS"; //Define string variable
+window.alert(A);                    //Display string variable in an alert box
+var Sent1="This is the beginning of the string";  //Defining string variable
+var Sent2=" and this is the end of the string";   //Defining second string variable
+document.write(Sent1+Sent2)  //Expression to display the concatenate of the two defined strings above
+function myFirstFunction(){
+    var str="Button click achieved!";
+    document.getElementById("Button_Text").innerHTML=str;
+}
