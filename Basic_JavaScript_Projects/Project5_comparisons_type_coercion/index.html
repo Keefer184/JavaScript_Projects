@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Comparisons Type Coercion</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Comparisons Type Coercion</h1>
+        </header>
+        <!--Type of-->
+        <div>
+            <p id="ex1" onclick="checkType()">What type of value is '10'?</p>
+        </div>
+        <!--End Type of-->
+
+        <!--Type Coercion-->
+        <div>
+            <p id="ex2" onmouseover="typeCoercion()">This is what results if we add a string and a number in JS</p>
+        </div>
+        <!--End Type Coercion-->
+
+        <!--NaN-->
+        <div>
+            <p id="test_1" onmouseover="myFunction()">This is what would display if you performed an operation that led to a number in indeterminate form</p>
+        </div>
+        <!--End NaN-->
+
+        <!--True-->
+        <div>
+            <p id="test_2" onmouseover="nanCheck1()">True or False: The phrase "three thousand" would NOT be considered a <i>number</i> in JS?</p>
+        </div>
+        <!--End True-->
+
+        <!--False-->
+        <div>
+            <p id="test_3" onmouseover="nanCheck2()">True or False: The phrase'3000' would NOT be considered a <i>number</i> in JS?</p>
+        </div>
+        <!--End False-->
+
+        <!--Infinity-->
+        <div>
+            <p id="inf_1" onmouseover="posInf()">This is how JS will display <q>positive infinity</q>.</p>
+        </div>
+        <!--End Infinity (LOL)-->
+
+        <!--Neg Infinity-->
+        <div>
+            <p id="inf_2" onmouseover="negInf()">This is how JS will display <q>negative infinity</q>.</p>
+        </div>
+        <!--End Neg Infinity (LOL)-->
+
+        <!--Boolean-->
+        <div>
+            <p id="Boolean_1" onmouseover="bool1()">Is 6 greater than 3?</p>
+        </div>
+        <div>
+            <p id="Boolean_2" onmouseover="bool2()">Is 6 less than 3?</p>
+        </div>
+        <div>
+            <p id="Boolean_3" onmouseover="bool3()">Is 6 greater than 3 AND 7 less than 8?</p>
+        </div>
+        <div>
+            <p id="Boolean_4" onmouseover="bool4()">Is 6 greater than 3 AND 7 greater than 8?</p>
+        </div>
+        <div>
+            <p id="Boolean_5" onmouseover="bool5()">Is 6 less than 3 OR 7 greater than 8?</p>
+        </div>
+        <div>
+            <p id="Boolean_6" onmouseover="bool6()">Is 6 less than 3 OR 7 less than 8?</p>
+        </div>
+        <div>
+            <p id="Not_1" onmouseover="notFunction1()">Is 7 NOT greater than 8?</p>
+        </div>
+        <div>
+            <p id="Not_2" onmouseover="notFunction2()">Is 7 NOT less than 8?</p>
+        </div>
+        <!--End Boolean-->
+        
+        <!--Console Log Check-->
+        <div>
+            <p id="conslog" onmouseover="consLog()">What is 3+3?</p>
+        </div>
+        
+        <!-- == T/F-->
+        <div>
+            <p id="numcheck1" onmouseover="numCheck1()">Does 5=5?</p>
+        </div>
+        <div>
+            <p id="numcheck2" onmouseover="numCheck2()">Does -5=5?</p>
+        </div>
+
+        <!-- === T/F-->
+        <div>
+            <p id="valcheck1" onmouseover="valCheck1()">Does "Brian"="Brian"?</p>
+        </div>
+        <div>
+            <p id="valcheck2" onmouseover="valCheck2()">Does "Baseball"=9?</p>
+        </div>
+        <div>
+            <p id="valcheck3" onmouseover="valCheck3()">Does 10="Ten"?</p>
+        </div>
+        <div>
+            <p id="valcheck4" onmouseover="valCheck4()">Does "Brian"="Jimmy"?</p>
+        </div>
+    </body>
+</html>
