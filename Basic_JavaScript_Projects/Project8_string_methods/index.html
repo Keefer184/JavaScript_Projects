@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>String Methods</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>String Methods</h1>
+        </header>
+        <!--Concatenate Method-->
+        <div>
+            <h2>We are going to concatenate the following strings:</h2>
+            <ul>
+                <li>Coding is difficult</li>
+                <li>but it is fun once you get the hang of it!</li>
+                <li>Like now, I am trying</li>
+                <li>to concatenate strings from a list, instead of predefined variables!</li>
+            </ul>
+            <button onclick="codeConcat()">Click to see result!</button>
+            <p id="conc"></p>
+        </div>
+
+        <!--Slice Method-->
+        <div>
+            <h2>I am going to slice up the following sentence, to create a new one!</h2>
+            <p>There is a number of I's in "Team"!</p>
+            <br>
+            <button onclick="slice1()">Click to seee the truth!</button>
+            <p id="slice_1"></p>
+
+        <!--Using .search() Method-->
+
+            <p>To prove this, let's perform a .search() for the letter 'i' in 'Team'.</p>
+            <button onclick="iInTeam()">TEAM</button> 
+            <p id="i_search"></p>
+            <p>but wait....</p>
+            <button onclick="meInTeam()">TEAM...?</button>
+            <p id="me_search"></p>
+        </div>
+
+        <!--Number Methods-->
+        <div>
+            <h2>Numbers to String</h2>
+            <p>We are going to turn the number 184 into a string!</p>
+            <button onclick="numToString()">184</button>
+            <p id="num_to_string"></p>
+        </div>
+        <div>
+            <h2>Values</h2>
+            <p>In what seems like a silly idea, we are going to use the .valueOf() method to show that these next three number statements will all produce the same number:</p>
+            <ul>
+                <li>x=184</li>
+                <li>184</li>
+                <li>100 + 84</li>
+            </ul>
+            <button onclick="valueMethod()">Let's Gooooooo!!</button>
+            <p id="value_1"></p>
+            <p id="value_2"></p>
+            <p id="value_3"></p>
+        </div>
+        <div>
+            <h2>Shortening Numbers</h2>
+            <p>We are going to take the infinite number pi and return only 7 digits (counting the 3)</p>
+            <button onclick="piToSeven()">PI not PIE</button>
+            <p id="pi_to_seven"></p>
+            <p>Is that the correct rounding though?  Hmmm... let's double check using a different method..</p>
+            <button onclick="piFixed()">PI</button>
+            <p id="pi_fixed"></p>
+        </div>
+    </body>
+</html>
