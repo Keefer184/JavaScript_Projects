@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic HTML</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Scope time function</h1>
+        </header>
+        <!--Global and Local Variables-->
+        <div>
+            <h3>Global Variables</h3>
+            <p>Lets add some numbers to pi!(3.14159)</p>
+            <br>
+            <button onclick="Add_1()">Click here to add 100 to pi!</button>
+            <p id="Global_Return_1"></p>
+            <br>
+            <button onclick="Add_2()">Click here to add 200 to pi!</button>
+            <p id="Global_Return_2"></p>
+            <br>
+        </div>
+        <div>
+            <h3>Local Variables</h3>
+            <p>Now lets try inputting one value and show the differnce between local and global!</p>
+            <input id="Num_2" type="number" value="">
+            <br>
+            <button onclick="Add_3()">Click here to add 30 to your value!</button>
+            <p id="Local_Return_1"></p>
+            <br>
+            <button onclick="Add_4()">Click here to add 40 to your value!</button>
+            <p id="Local_Return_2"></p>
+            <br>
+        </div>
+        <!--End G and L Var-->
+
+        <!--Conditional Statements Practice-->
+        <div>
+            <h3>Conditional Statements</h3>
+            <br>
+            <button onclick="New_Time()">Click here to check your progress today!</button>
+            <p id="Current_Time"></p>
+            <br>
+            <!--Else if Practice-->
+            <div>
+                <h4>Time of Day</h4>
+                <p id="Time_of_Day"></p>
+                <button onclick="Time_Function()">Click here for the current time of day!</button>
+            </div>
+            <br>
+            <h4>Are you old enough to drink? (In America)</h2>
+            <p>Let's check!  Enter your age below!</p>
+            <br>
+            <input id="Age_Input" type="number">
+            <button onclick="ageCheck()">Click to check!</button>
+            <p id="old_enough"></p>
+            
+        </div>
+
+    </body>
+</html>
