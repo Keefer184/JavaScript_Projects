@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loops and Arrays</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+        <script src="JS/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Loops and Arrays</h1>
+        </header>
+        <!--While loop function-->
+        <div>
+            <h4>Let's generate a countdown using a while loop! (no timing)</h4>
+            <p id="loop"></p>
+            <button onclick="callLoop()">Click here to execute the loop.</button>
+        </div>
+        <!--End while loop function-->
+
+        <!--String Length-->
+        <div>
+            <h2>Lets count characters!</h2>
+            <p>Type ANY phrase, word, number, string below, then click the GO! button to see how many characters are in your string!</p>
+            <input id="phrase_1" value="Type your phrase here!">
+            <button onclick="stringLength()">GO!</button>
+            <p id="string_length"></p>
+        </div>
+
+        <!--For Loop Function-->
+        <div>
+            <p id="List_of_Instruments"></p>
+            <button onclick="forLoop()">Click here to see a list of instruments built by a for loop</button>
+        </div>
+
+        <!--Using Arrays-->
+        <div>
+            <h2>Using Arrays</h2>
+            <p>Let's use the previous array (Instruments) and select and option.</p>
+            <p>Input a number between 0 and 5 and the element with that index in our array will display!</p>
+            <input id="array_choice" type="number" min="0" max="5">
+            <p id="Array"></p>
+            <button onclick="arrayFunction()">Click for that element in the array!</button>
+        </div>
+
+        <!--Using Const-->
+        <div>
+            <h2>Do you like Blink 182?</h2>
+            <p id="constant"></p>
+            <button onclick="constant_function()">Click Here for some information about the band.</button>
+        </div>
+
+        <!--Using the Let Keyword-->
+        <div>
+            <h2>Tell me your favorite number!</h2>
+            <input id="num_choice" type="number">
+            <p id="fav_num"></p>   
+            <button onclick="favNum()">Let's count to it!</button>
+        </div>
+
+        <!--Playing around with return-->
+        <div>
+            <h2>Tell me your name!</h2>
+            <input id="name" type="text">
+            <p id="name_out"></p>
+            <button onclick="getName()">Tell me!</button>
+        </div>
+
+        <!--Creating and Using Obhects-->
+        <div>
+            <h2>Here is an impossible baseball play!</h2>
+            <p id="impossibleplay"></p>
+            <button onclick="Announce()">Click to see it!</button>
+        </div>
+
+        <!--Fun with Breaks and Continue-->
+        <div>
+            <h2>Pick a number between 1 and 10</h2>
+            <input id="num_1" type="number" min="1" max="10">
+            <p id="stop_num"></p>   
+            <button onclick="breakItUp()">This button will count to it and stop before!</button>
+            <p id="skip_num"></p>
+            <button onclick="skipIt()">This button will ski it and keep counting!</button>
+        </div>
+
+    </body>
+</html>
