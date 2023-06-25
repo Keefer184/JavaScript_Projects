@@ -4,17 +4,77 @@
         <title>Countdown</title>
         <meta charset="utf-8">
         <meta name="author" content="Matt">
-        <script src="JS/main.js"></script>
+        <link rel="stylesheet "href="CSS/main.css">
     </head>
     <body>
         <header>
-            <h1>Countdown Slideshow</h1>
+            <h1>Countdown/Slideshow</h1>
         </header>
         <!--Countdown-->
-        <h2>Countdown</h2>
-        <p>How many seconds would you like to set your alarm for?</p>
-        <input id="seconds" value="">
-        <button onclick="countdown()">Click to Start!</button>
-        <p id="timer"></p>
+        <div>
+            <h2>Countdown</h2>
+            <p>How many seconds would you like to set your alarm for?</p>
+            <input id="seconds" value="">
+            <button onclick="countdown()">Click to Start!</button>
+            <p id="timer"></p>
+            <br>
+            <br>
+        </div>
+
+        <!--Slideshow-->
+        <div class="slideshow-container">
+            <!--Image Containers-->
+            <div class="mySlides fade">
+                <div class="numtext">1/6</div>
+                <img src="Images/dog_1.jpg" style="width:100%">
+                <div class="img_text">Happy Pup!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numtext">2/6</div>
+                <img src="Images/dog_2.jpg" style="width:100%">
+                <div class="img_text">Fluffy Pup!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numtext">3/6</div>
+                <img src="Images/dog_3.jpg" style="width:100%">
+                <div class="img_text">No-Nonsense Pup!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numtext">4/6</div>
+                <img src="Images/dog_4.jpg" style="width:100%">
+                <div class="img_text">High Alert Pup!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numtext">5/6</div>
+                <img src="Images/dog_5.jpg" style="width:100%">
+                <div class="img_text">Is it a Pup?</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numtext">6/6</div>
+                <img src="Images/dog_8.jpg" style="width:100%">
+                <div class="img_text">Prepare for Liftoff Pup!</div>
+            </div>
+
+            <!--Slideshow Buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Dot and Circle (Aesthetics, not necessary)-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <script src="JS/main.js"></script>
     </body>
 </html>
