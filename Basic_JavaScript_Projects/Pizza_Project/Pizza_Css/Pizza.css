@@ -1,0 +1,127 @@
+/*Overall Menu Settings*/    
+#menuBG {
+    width: 600px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Indie Flower', cursive;
+    font-size:2.25rem; 
+}
+
+h3{
+    text-align: center;
+    margin: 2px auto;
+    font-size: 1.75rem;
+    font-family: 'Patrick Hand', cursive;
+}
+body{
+    background-image: url('./Images/Dalmation.jpg');
+}
+
+div{
+    font-family: 'Indie Flower', cursive;
+}
+.menu-heading{
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(102, 100, 5, 0.404);
+    padding: 5px;
+    margin: 2px auto;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.1));
+}
+
+.cheese, .size, .crust, .sauce, .meat, .veggie{
+    cursor:pointer;
+}
+
+/*Form inlay settings*/
+#frmMenu{
+    width: 600px;
+    height: 200px;
+}
+
+/*Menu Choice Boxes*/
+.left{
+    width: 280px;
+    height: 260px;
+    float: left;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(102, 100, 5, 0.404);
+    padding: 5px;
+    margin: 2px auto;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.1));
+}
+
+.right{
+    width: 280px;
+    height: 260px;
+    float: right;
+    background-color:white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(102, 100, 5, 0.404);
+    border-radius: 5%;
+    padding: 5px;
+    margin: 2px auto;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.1));
+}
+
+/*Checkout Settings*/
+#showText{
+    width: 280px;
+    height: 260px;
+    margin: 0 auto;
+    float: left;
+    background-color:white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(102, 100, 5, 0.404);
+    border-radius: 5%;
+    padding: 5px;
+    margin: 2px auto;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.1));
+}
+
+#totalPrice{
+    width: 280px;
+    height: 260px;
+    margin: 0 auto;
+    float: right;
+    background-color:white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(102, 100, 5, 0.404);
+    border-radius: 5%;
+    padding: 5px;
+    margin: 2px auto;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.1));
+}
+
+#cart{
+    top: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+}
+
+/*Place your Order Button*/
+#btnOrder{
+    margin: 10px 10px 10px 225px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(255,13,25,0.4));
+}
+
+#btnOrder:hover{
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    text-shadow: 2px 2px 2px rgba(255,13,25,0.4);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Puppy Pizza!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Pizza_Css/Pizza.css" type="text/css">
+        <script src="Pizza_JS/Pizza.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Menu Options Input-->
+        <div id="menuBG">
+            <div class="menu-heading">
+                <h1>Puppy Pizza!</h1>
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Your Order">
+            </div>
+            <form id="frmMenu">
+                
+                <!--Size Options-->
+                
+                <div class="menu left">
+                    <h3>Size</h3>
+                    <input class="size" type="radio" name="Size" value="Chihuahua">Chihuahua...($6)<br>
+                    <input class="size" type="radio" name="Size" value="Beagle">Beagle...($8)<br>
+                    <input class="size" type="radio" name="Size" value="Labrador">Labrador...($10)<br>
+                    <input class="size" type="radio" name="Size" value="Great Dane">Great Dane...($14)<br>
+                    <img src="./Pizza_Css/Images/dog_1.png" alt="Puppy 1" style="height:103px; width:120px; float:right;">
+                </div>
+            
+                <!--Cheese Options-->
+                <div class="menu right">
+                    <h3>Cheeses</h3>
+                    <input class="cheese" type="radio" name="Cheese" value="Light">Light Cheese...(+$1)<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Regular">Regular Cheese<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Extra">Extra Cheese...(+$2)<br>
+                </div>
+                
+                <!--Crust Options-->
+                <div class="menu left">
+                    <h3>Crust</h3>
+                    <input class="crust" type="radio" name="Crust" value="Thin">Greyhound<sup>(Thin)</sup><br>
+                    <input class="crust" type="radio" name="Crust" value="Pan">Short-haired<sup>(Pan)</sup><br>
+                    <input class="crust" type="radio" name="Crust" value="Deep-dish">Bulldog<sup>(Deep-dish)</sup><br>
+                    <input class="crust" type="radio" name="Crust" value="Detroit">Dachsund<sup>(Detroit-Style)</sup><br>
+                </div>
+                
+                <!--Sauce Options-->
+                <div class="menu right">
+                    <h3>Sauces</h3>
+                    <input class="sauce" type="radio" name="Sauce" value="Half">Light Sauce...(+$1)<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Normal">Regular Sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Full">Extra Sauce...($+2)<br><br>
+                    <img src="./Pizza_Css/Images/dog_2.png" alt="Puppy 2" style="height:103px; width:120px; float:right;">
+                </div>
+
+                <!--Meat Toppings-->    
+                <div class="menu left">
+                    <h3>Dog Favorites</h3>
+                    <input class="meat" type="checkbox" name="Meat" value="Snausage">Snausage<br>
+                    <input class="meat" type="checkbox" name="Meat" value="Pupperoni">Pupperoni<br>
+                    <input class="meat" type="checkbox" name="Meat" value="Canadian Bacon">Newfoundland's Ham<sup>(Canadian Bacon)</sup><br>
+                    <input class="meat" type="checkbox" name="Meat" value="Ground Beef">Cattle Dog's Herd<sup>(Ground Beef)</sup><br>
+                    <input class="meat" type="checkbox" name="Meat" value="Anchovies">Water Dog's Catch<sup>(Anchovies)</sup><br>
+                    <input class="meat" type="checkbox" name="Meat" value="Chicken">Retriever's Catch<sup>(Chicken)</sup><br>
+                    <p> First Dog Favorite topping is free! $1 for each additional topping.</p>
+                </div>
+
+                <!--Veggie Options-->
+                <div class="menu right">
+                    <h3>Pasture Choices</h3>
+                    <input class="veggie" type="checkbox"name="Veggie" value="Onions">Onions<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Olives">Olives<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Tomatoes">Tomatoes<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Green Peppers">Green Peppers<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Pineapple">Pineapple<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Mushrooms">Mushrooms<br>
+                    <p>First Pasture Choice is free! $1 for each additional topping.</p>
+                </div>
+
+                <!--Checkout-->
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
