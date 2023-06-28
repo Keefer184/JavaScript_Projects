@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document Methods</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+    </head>
+    <body>
+        <header>
+            <h1>Document Methods</h1>
+        </header>
+        <p>Utilizing document object properties and methods.</p>
+        <p>Adding items to a list.</p>
+
+        <ul id="demo">
+            <li>Cloud</li>
+            <li>Aerith</li>
+            <li>Tifa</li>
+            <li>Barret</li>
+            <li>Red XII</li>
+            <li>Cid</li>
+        </ul>
+
+        <button onclick="optionalChars()">Click to see optional characters!</button>
+        <script>
+            function optionalChars(){
+                //Defines array to add
+                const SpecChar = ["Yuffie","Vincent"];
+                //Creates the fragment
+                const CharFrag = document.createDocumentFragment();
+                //Assigns values from SpecChar as li items
+                for (let x in SpecChar){
+                    const ListAdd = document.createElement('li');
+                    ListAdd.textContent = SpecChar[x];
+                    CharFrag.appendChild(ListAdd);
+                }
+                //Adds fragment to ul
+                document.getElementById('demo').appendChild(CharFrag);
+            }
+        </script>
+    </body>
+</html>

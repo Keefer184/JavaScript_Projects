@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Function</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matt">
+    </head>
+    <body>
+        <header>
+            <h4>Arrow Function</h4>
+        </header>
+        <p id="arrow"></p>
+        <p id="some_method"></p>
+        <script>
+            let hello= "";
+
+            hello = (Name) => "Hello " + Name + "!"
+
+            document.getElementById('arrow').innerHTML=hello('Newcomer');
+
+            const Heroes=["Cloud","Tifa","Aerith","RedXII"];
+            let lookFor=Heroes.some(lookFunction);
+
+            document.getElementById('some_method').innerHTML = "It is " + lookFor + " that Red XII is in the party.";
+            function lookFunction(value,index,aray){
+                return value=="RedXII";
+            }
+        </script>
+
+
+    </body>
+</html>
