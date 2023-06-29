@@ -1,6 +1,18 @@
 /*-------------------------------------
     GENERAL SETTINGS
 ---------------------------------------*/
+body{
+    animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange{
+    0% {background-color:white;}
+    20% {background-color:rgba(130, 255, 98, 0.562);}
+    40% {background-color:rgba(98, 197, 255, 0.562);}
+    60% {background-color:rgb(121, 107, 247);}
+    80% {background-color:rgb(253, 105, 253);}
+    100% {background-color:rgb(247, 226, 107);}
+}
 .center-container{
     width:608px;
     margin:0 auto;
