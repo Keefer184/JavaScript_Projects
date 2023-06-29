@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Attempt at XML</title>
+    </head>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+            var Hero = "<hero>" + "<name>Cloud</name>" + "<weapon>Sword</weapon>" + "<job>Soldier</job>" + "<ultlimit>Omnislash</ultlimit>"+ "</hero>";
+            XML_Parser = new DOMParser();
+            XML_Document = XML_Parser.parseFromString(Hero, "text/xml");
+            document.getElementById('XML_Example').innerHTML = XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
