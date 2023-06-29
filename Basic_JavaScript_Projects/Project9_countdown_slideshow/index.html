@@ -76,5 +76,26 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
+
+        <!--PopUp Form-->
+        <button class="open-button" onclick="openForm()">Click here to provide feedback!</button>
+        <div class="form-popup" id="feedback_form">
+            <form action="" class="form-container">
+                <h1>Provide feedback!</h1>
+
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="text" placeholder="Enter Email Address" name="email" required>
+
+                <label for="feedback">Provide Feedback: </label>
+                <input type="text" placeholder="Enter Message Here" name="feedback" required>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+            </form>
+        </div>
     </body>
 </html>
