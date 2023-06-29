@@ -1,3 +1,6 @@
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
 function getReceipt(){
     var text1="<h3>You Ordered:</h3>";
     var runningTotal = 0;
